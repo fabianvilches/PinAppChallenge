@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: PinApp-Challenge
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: PinAppChallenge
+  template:
+    metadata:
+      labels:
+        app: PinAppChallenge
+    spec:
+      containers:
+        - name: PinAppChallenge
+          image: ChallengePinApp/PinApp-Challenge:latest
+          ports:
+            - containerPort: 8080
