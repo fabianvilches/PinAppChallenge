@@ -36,7 +36,7 @@ Requisitos previos
 	gcloud init
 	gcloud config set project PinAppChallenge
 
-- Subir la imagen Docker a Google Container Registry
+- Subir la imagen Docker a Google Container Registry:
 	docker build -t gcr.io/PinAppChallenge/pinapp-challenge .
 	gcloud auth configure-docker
 	docker push gcr.io/PinAppChallenge/pinapp-challenge
