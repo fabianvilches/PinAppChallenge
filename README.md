@@ -12,7 +12,7 @@ Requisitos previos
 
 ## Pasos para ejecutar localmente
 - Clonar el repositorio:
-	git clone https://github.com/TU_USUARIO/pinapp-challenge.git
+	git clone https://github.com/fabianvilches/pinapp-challenge.git
 	cd pinapp-challenge
 - Construir el proyecto con Maven:
 	mvn clean install
@@ -43,7 +43,7 @@ Requisitos previos
 
 - Desplegar en Cloud Run:
    gcloud run deploy pinapp-challenge \
-       --image gcr.io/TU_PROYECTO/pinapp-challenge \
+       --image gcr.io/PinApp-Challenge/pinapp-challenge \
        --platform managed \
        --region us-central1 \
        --allow-unauthenticated
