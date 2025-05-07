@@ -43,7 +43,7 @@ Requisitos previos
 
 - Desplegar en Cloud Run:
    gcloud run deploy pinapp-challenge \
-       --image gcr.io/PinApp-Challenge/pinapp-challenge \
+       --image gcr.io/PinAppChallenge/pinapp-challenge \
        --platform managed \
        --region us-central1 \
        --allow-unauthenticated
